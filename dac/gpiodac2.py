@@ -33,7 +33,9 @@ def num2dac(value):
             GPIO.output(LED[i], 1)
     time.sleep(0.3)
 
-
+def dac_data():
+    for i in range(0, 8):
+        GPIO.output(LED[i], data[i]
 
 def ad(repetitionsNumber):
     for i in range (repetitionsNumber):
